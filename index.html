@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MUHAMMAD TAQI | AI & Game Engine Architect</title>
+    <meta name="description" content="Founder of MT-AI Ecosystem. Explore 1000+ games, 3D engines, and professional AI tools.">
+    <meta name="google-site-verification" content="PMoR4Hsf1SVtUtcoxIb2JnbJM9e4ra6c2xZ8GsanLfY" />
+    <link rel="canonical" href="https://w-w-w.oneapp.dev/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "MT-AI Ecosystem",
+          "url": "https://w-w-w.oneapp.dev/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://mt-ai.oneapp.dev/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Muhammad Taqi",
+          "jobTitle": "AI & Web Developer",
+          "url": "https://w-w-w.oneapp.dev/",
+          "knowsAbout": ["Artificial Intelligence", "Game Development", "Three.js", "Web Development"]
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <style>
+        :root {
+            --navy: #0a192f;
+            --navy-light: #112240;
+            --gold: #d4af37;
+            --neon: #64ffda;
+            --white: #e6f1ff;
+            --gray: #8892b0;
+        }
+
+        body {
+            background: var(--navy);
+            color: var(--white);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, var(--gold), #f1d592);
+            color: var(--navy);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 800;
+            cursor: pointer;
+            margin-bottom: 30px;
+            transition: 0.3s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            text-transform: uppercase;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+        }
+
+        .cv-container {
+            width: 100%;
+            max-width: 850px;
+            background: var(--navy-light);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { color: var(--gold); font-size: 3rem; margin: 0; letter-spacing: 2px; }
+        .tagline { color: var(--neon); font-family: monospace; font-size: 1.1rem; margin-top: 10px; }
+
+        .section-title {
+            color: var(--gold);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin: 30px 0 15px 0;
+            border-left: 3px solid var(--gold);
+            padding-left: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(100, 255, 218, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--neon);
+            background: rgba(100, 255, 218, 0.05);
+        }
+
+        .card b { color: var(--neon); display: block; margin-bottom: 5px; }
+        .card span { color: var(--gray); font-size: 0.85rem; }
+
+        .skills-p {
+            line-height: 1.7;
+            background: rgba(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+    </style>
+</head>
+<body>
+
+    <button class="download-btn" onclick="generatePDF()">Download Final Portfolio (PDF)</button>
+
+    <div class="cv-container" id="cv-content">
+        <header>
+            <h1>MUHAMMAD TAQI</h1>
+            <div class="tagline">AI & WEB DEVELOPIN Architect</div>
+            <p style="color: var(--gray);">Founder of MT-AI Ecosystem | 2026</p>
+        </header>
+
+        <div class="section-title">Central Hubs</div>
+        <div class="grid">
+            <a href="https://mt-ai.oneapp.dev/" class="card">
+                <b>MT-AI Official Portal</b>
+                <span>The centralized dashboard for 35+ web tools.</span>
+            </a>
+            <a href="https://mt-webs.oneapp.dev/" class="card">
+                <b>My All Webs</b>
+                <span>Full repository of professional web projects.</span>
+            </a>
+        </div>
+
+        <div class="section-title">Gaming Engines</div>
+        <div class="grid">
+            <a href="https://ak111222.oneapp.dev/" class="card">
+                <b>1000+ Games Arcade</b>
+                <span>Massive interactive ecosystem developed with C# & JS.</span>
+            </a>
+            <a href="https://build-your-subway.oneapp.dev/" class="card">
+                <b>3D Runner Engine</b>
+                <span>Three.js powered builder for 3D subway games.</span>
+            </a>
+        </div>
+
+        <div class="section-title">Technical Expertise</div>
+        <div class="skills-p">
+            <b>Languages:</b> C#, C++, Python, JavaScript, HTML, CSS, C.<br>
+            <b>Technologies:</b> Three.js, AI Integration, OCR Systems, API Architectures.<br>
+            <b>Design:</b> Glassmorphism, Royal Themes, Cyberpunk UI.
+        </div>
+
+        <footer>
+            Built by MUHAMMAD TAQI AI SYSTEMS
+        </footer>
+    </div>
+
+    <script>
+        function generatePDF() {
+            const element = document.getElementById('cv-content');
+            const opt = {
+                margin: 10,
+                filename: 'Muhammad_Taqi_CV.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            html2pdf().set(opt).from(element).save();
+        }
+    </script>
+</body>
+</html>
