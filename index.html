@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="google-site-verification" content="QynN1RmMpFejrPWhnat0MGY-ei2F5WfldEU3zP1rXvM" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MUHAMMAD TAQI | AI & Game Engine Architect</title>
-    <meta name="description" content="Founder of MT-AI Ecosystem. Explore 1000+ games, 3D engines, and professional AI tools.">
+    <meta name="description" content="Founder of MT-AI Ecosystem. Explore 1000+ games, 3D engines, and professional AI tools. Built by Muhammad Taqi.">
     <meta name="google-site-verification" content="PMoR4Hsf1SVtUtcoxIb2JnbJM9e4ra6c2xZ8GsanLfY" />
+    
     <link rel="canonical" href="https://muhammadtaqi512q-oss.github.io/mt-ai/">
 
     <script type="application/ld+json">
@@ -29,7 +30,7 @@
           "name": "Muhammad Taqi",
           "jobTitle": "AI & Web Developer",
           "url": "https://muhammadtaqi512q-oss.github.io/mt-ai/",
-          "knowsAbout": ["Artificial Intelligence", "Game Development", "Three.js", "Web Development", "C#"]
+          "knowsAbout": ["Artificial Intelligence", "Game Development", "Three.js", "Web Development", "C#", "Python"]
         }
       ]
     }
@@ -47,16 +48,17 @@
             --gray: #8892b0;
         }
 
+        * { box-sizing: border-box; }
         body {
             background: var(--navy);
             color: var(--white);
-            font-family: 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 40px 20px;
-            background-attachment: fixed;
+            background-image: radial-gradient(circle at 50% 50%, #112240 0%, #0a192f 100%);
         }
 
         .download-btn {
@@ -69,7 +71,7 @@
             font-size: 1rem;
             cursor: pointer;
             margin-bottom: 30px;
-            transition: 0.3s;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             text-transform: uppercase;
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
@@ -86,7 +88,9 @@
             border: 1px solid rgba(212, 175, 55, 0.3);
             border-radius: 20px;
             padding: 50px;
+            position: relative;
             box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
         }
 
         header {
@@ -98,17 +102,19 @@
 
         h1 {
             color: var(--gold);
-            font-size: 3.5rem;
+            font-size: clamp(2rem, 8vw, 3.5rem);
             margin: 0;
-            letter-spacing: 2px;
+            letter-spacing: 4px;
             text-transform: uppercase;
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
         }
 
         .tagline {
             color: var(--neon);
             font-family: 'Courier New', monospace;
-            font-size: 1.2rem;
-            margin-top: 10px;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            font-weight: bold;
         }
 
         .section-title {
@@ -116,7 +122,7 @@
             align-items: center;
             color: var(--gold);
             text-transform: uppercase;
-            font-size: 1rem;
+            font-size: 0.9rem;
             letter-spacing: 3px;
             margin: 40px 0 20px 0;
         }
@@ -181,8 +187,8 @@
         .skills-p {
             line-height: 1.8;
             background: rgba(0,0,0,0.2);
-            padding: 20px;
-            border-radius: 10px;
+            padding: 25px;
+            border-radius: 15px;
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
@@ -191,18 +197,19 @@
             text-align: center;
             font-size: 0.8rem;
             color: var(--gray);
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
-    <button class="download-btn" onclick="generatePDF()">Download Final Master CV (PDF)</button>
+    <button class="download-btn" onclick="generatePDF()">Download Master Portfolio (PDF)</button>
 
     <div class="cv-container" id="cv-content">
         <header>
             <h1>MUHAMMAD TAQI</h1>
             <div class="tagline">AI & WEB DEVELOPIN Architect</div>
-            <p style="color: var(--gray);">Based in Pakistan | Founder of MT-AI Ecosystem</p>
+            <p style="color: var(--gray);">Founder of MT-AI Ecosystem | Global Developer</p>
         </header>
 
         <div class="section-title">🤖 AI Systems & Central Hubs</div>
@@ -217,33 +224,28 @@
                 <b>MY ALL WEBS</b>
                 <span>A complete repository of all professional web projects.</span>
             </a>
-            <a href="https://w-w-w.oneapp.dev/" class="card" target="_blank">
-                <span class="badge">LEGACY</span>
-                <b>Original OneApp</b>
-                <span>The primary verification portal and authentication system.</span>
-            </a>
         </div>
 
         <div class="section-title">🕹️ Flagship Gaming & 3D Engines</div>
         <div class="grid">
             <a href="https://ak111222.oneapp.dev/" class="card" target="_blank">
-                <span class="badge">Massive Arcade</span>
+                <span class="badge">Arcade</span>
                 <b>1000+ Games Collection</b>
-                <span>Interactive ecosystem developed with C#, JS, and Python.</span>
+                <span>Massive interactive library developed with C#, JS, and Python.</span>
             </a>
             <a href="https://build-your-subway.oneapp.dev/" class="card" target="_blank">
                 <span class="badge">3D Graphics</span>
                 <b>3D Subway Runner Engine</b>
-                <span>Three.js powered 3D builder for infinite runner games.</span>
+                <span>Three.js powered infinite runner engine with custom rendering.</span>
             </a>
             <a href="https://build-your-ff.oneapp.dev/" class="card" target="_blank">
                 <span class="badge">Battle Engine</span>
-                <b>Build-Your-FF Builder</b>
+                <b>Build-Your-FF</b>
                 <span>Advanced 2D Battle Royale game creator with code export.</span>
             </a>
         </div>
 
-        <div class="section-title">🌐 Web Builders & Studios</div>
+        <div class="section-title">🌐 Web Builders & No-Code Studios</div>
         <div class="grid">
             <a href="https://web-hoster-b.oneapp.dev/" class="card" target="_blank">
                 <b>Web-Hoster-B</b>
@@ -253,17 +255,13 @@
                 <b>Quiz Game Builder</b>
                 <span>Logic-heavy EdTech tool for interactive educational games.</span>
             </a>
-            <a href="https://sites.google.com/view/buildyourgames/home" class="card" target="_blank">
-                <b>Build Your Games Studio</b>
-                <span>Google-integrated studio for rapid game prototyping.</span>
-            </a>
         </div>
 
-        <div class="section-title">🛠️ Technical Stack & Skills</div>
+        <div class="section-title">🛠️ Technical Stack</div>
         <div class="skills-p">
-            <b style="color:var(--gold)">Core Languages:</b> C#, C++, Python, JavaScript (ES6+), C, HTML5, CSS3.<br>
-            <b style="color:var(--gold)">Advanced Stack:</b> Three.js (3D), AI Integration, Tesseract.js (OCR), API Architectures.<br>
-            <b style="color:var(--gold)">Specialization:</b> Game Physics, Glassmorphism Design, Automation Logic.
+            <b style="color: var(--gold)">Languages:</b> C#, C++, Python, JavaScript (ES6+), C, HTML5, CSS3.<br>
+            <b style="color: var(--gold)">Advanced:</b> Three.js, AI Integration, Tesseract.js OCR, API Architectures.<br>
+            <b style="color: var(--gold)">Specialization:</b> Glassmorphism Design, Physics Engines, Neural Integration.
         </div>
 
         <footer>
@@ -278,7 +276,7 @@
                 margin: 5,
                 filename: 'Muhammad_Taqi_Ultimate_Portfolio.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true },
+                html2canvas: { scale: 2, useCORS: true, letterRendering: true },
                 jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
             };
             html2pdf().set(opt).from(element).save();
